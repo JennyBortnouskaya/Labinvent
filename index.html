@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"
+          type="text/css"/>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.0.0.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+          rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="page">
+    <div>
+        <div class="side__menu">
+            <div>
+                <div class="side__menu__header">lims</div>
+                <div>
+                    <div class="search">
+                        <input type="text" class="searchTerm" placeholder="Search">
+                        <button type="submit" class="searchButton">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="progress" style="position: relative;">
+                    <span class="progress-type">Run 00:23/01:00</span>
+                    <span class="progress-completed"> -00:47</span>
+                    <div class="progress-bar indeterminate">
+                    </div>
+                </div>
+                <div class="progress__footer">
+                    <p>run</p>
+                    <img src="image/ON_OFF.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="menu__bar">
+            <div class="menu">
+                <ul>
+                    <li class="label"><img src="image/burger.png" alt="main menu"></li>
+                    <li class="item"><span>Instruments</span>
+                        <ul class="sub__menu">
+                            <li class="sub__menu__item"><a href="#">View All</a></li>
+                            <li class="sub__menu__item"><a href="#">Add New</a></li>
+                        </ul>
+                    </li>
+                    <li class="item"><span>Widgets</span></li>
+                    <li class="item"><span>View</span></li>
+                    <li class="item"><span>Administration</span></li>
+                </ul>
+            </div>
+            <div class="account">
+                <div class="profile__name acc">Alexander</div>
+                <div class="language__settings acc">ENG</div>
+                <div class="login acc"></div>
+            </div>
+
+        </div>
+
+        <div class="main">
+            <div class="samples">
+                <div class="sampler">
+                    <div class="sampler__header"><p class="square"></p>Sampler</div>
+                    <div class="sampler__content">
+                        <svg width="40%" height="40%" viewBox="0 0 73 90" xmlns="http://www.w3.org/2000/svg"
+                             xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <use xlink:href='sampler-icon.svg#injection'/>
+                        </svg>
+                        <div class="sampler__content__pictures">
+                            <img src="image/thermostat.png">
+                            <img src="image/vial.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="sampler">
+                    <div class="sampler__header"><p class="square square__orange"></p>Quat.Pump</div>
+                    <div class="pump__content">
+                        <svg width="20%" height="40%" viewBox="0 0 64 140" xmlns="http://www.w3.org/2000/svg"
+                             xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <use xlink:href='bottle_filling_sprite.svg#bottle'/>
+                            <text x="25" y="80">A</text>
+                            <text x="20" y="130">0.0</text>
+                        </svg>
+                        <svg width="20%" height="40%" viewBox="0 0 64 140" xmlns="http://www.w3.org/2000/svg"
+                             xmlns:xlink="http://www.w3.org/1999/xlink">
+
+                            <use xlink:href='bottle_filling_sprite.svg#bottle'/>
+                            <use xlink:href='bottle_filling_sprite.svg#full'/>
+                            <text x="25" y="80">B</text>
+                            <text x="5" y="130">100.0</text>
+                        </svg>
+                        <svg width="30%" height="40%" viewBox="0 0 51 31" xmlns="http://www.w3.org/2000/svg"
+                             xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <use xlink:href='valve-icon.svg#Canvas'/>
+                        </svg>
+                        <p>1.000 mL/min</p>
+                    </div>
+                </div>
+            </div>
+            <div class="params">
+                <img class="separator" src="image/Arrow%20Dark.png">
+                <div class="worklist">
+                    <div class="worklist__header">
+                        <div class="worklist__name ">worklist</div>
+                        <div class="worklist__action">run</div>
+                        <div class="worklist__toDo"><span> to do: </span> 23 injections</div>
+                        <div class="worklist__time">02:15:00</div>
+                        <div class="worklist__method"><span>method:</span> Method1.amx (00:00/04:30)</div>
+                        <div class="worklist__single__run">single run</div>
+                    </div>
+                    <div class="worklist__main">
+                        <div class="worklist__main__options">
+                            <div class="worklist__main__option">ALS</div>
+                            <div class="worklist__main__option">Inlets</div>
+                            <div class="worklist__main__option">Columns</div>
+                            <div class="worklist__main__option"></div>
+                        </div>
+                        <div class="worklist__settings">
+                            <div class="columns__description">
+                                <div class="columns__description__picture">
+                                    <div>
+                                        <img src="image/inlet_.png">
+                                    </div>
+                                    <div>
+                                        <img src="image/column.png">
+                                    </div>
+                                    <div>
+                                        <img src="image/detector.png">
+                                    </div>
+                                </div>
+                                <div class="columns__description__article">
+                                    <p>(Initial): 0 min</p>
+                                    <p>ArMe @ 35 Oc Oven</p>
+                                    <p>Out: Ambient Pressure</p>
+                                    <p>25 m * 320 μm * 1μm</p>
+                                </div>
+                            </div>
+                            <div class="control__mode">
+                                <div class="columns__header"> Control Mode</div>
+                                <label class="checkbox">
+                                    <span>On</span>
+                                    <input type="checkbox" checked="checked">
+                                    <div class="checkbox__input"></div>
+                                </label>
+                                <div class="control__mode__table">
+                                    <div>
+                                        <p>Flow</p>
+                                        <p>Pressure</p>
+                                    </div>
+                                    <div>
+                                        <p><input type="text"></p>
+                                        <p><input type="text"></p>
+                                    </div>
+                                    <div>
+                                        <p>ml/min</p>
+                                        <p>psi</p>
+                                    </div>
+                                    <div>
+                                        <p>Average Velocity</p>
+                                        <p>Holdup Time</p>
+                                    </div>
+                                    <div>
+                                        <p><input type="text"></p>
+                                        <p><input type="text"></p>
+                                    </div>
+                                    <div>
+                                        <p>cm/sec</p>
+                                        <p>min</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="post__run">
+                                <div class="columns__header"> Post Run</div>
+                                <div class="control__mode__table">
+                                    <div>
+                                        <p>Post run</p>
+                                    </div>
+                                    <div>
+                                        <p><input type="text"></p>
+                                    </div>
+                                    <div>
+                                        <p>ml/min</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pressure__settings">
+                            <div class="columns__header"> Pressure/Flow Settings</div>
+                            <div class="radio__options">
+                                <label class="form_radio">Constant Pressure
+                                    <input type="radio" name="radio">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="form_radio">Ramped Pressure
+                                    <input type="radio" checked="checked" name="radio">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="form_radio">Constant Flow
+                                    <input type="radio" name="radio">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="form_radio">Ramped Flow
+                                    <input type="radio" name="radio">
+                                    <span class="checkmark"></span>
+                                </label>
+
+                            </div>
+                            <div>
+                                <table class="setting__table">
+                                    <thead>
+                                    <tr class="table__header">
+                                        <th></th>
+                                        <th>Ramp ##</th>
+                                        <th>Rate, mL/min per min</th>
+                                        <th>Value, mL/min</th>
+                                        <th>Hold Time, min</th>
+                                        <th>Run Time, min</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td></td>
+                                        <td>(Initial)</td>
+                                        <td></td>
+                                        <td>16.849</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label class="form_radio table_radio">
+                                                <input type="radio" name="cell_radio">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </td>
+                                        <td>Ramp 1</td>
+                                        <td>10</td>
+                                        <td>16.849</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label class="form_radio table_radio">
+                                                <input type="radio" name="cell_radio">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </td>
+                                        <td>Ramp 2</td>
+                                        <td>20</td>
+                                        <td>16.849</td>
+                                        <td>5</td>
+                                        <td>26</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="diagram__icon">
+                                <img src="image/switch%20to%20gradient.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="worklist__bar">
+                        <div class="worklist__bar__buttons">
+                            <button><img src="image/button_new.png"></button>
+                            <button><img src="image/button_open.png"></button>
+                        </div>
+                        <div class="worklist__bar__buttons">
+                            <div class="button__save">
+                                <button>Save</button>
+                            </div>
+                            <div class="button__save">
+                                <button>Save as</button>
+                            </div>
+                            <div class="button__cancel">
+                                <button>Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="live__chart">
+                    <div class="live__chart__header spectra__header">live chart</div>
+                    <div class="live__chart__main">
+                        <div class="live__chart__content">
+                            <div class="live__chart__markings">
+                                <p><img src="image/marking_green.png" alt="green">Plot</p>
+                                <p><img src="image/marking_purple.png" alt="purple">Plot</p>
+                                <p><img src="image/marking_yellow.png" alt="yellow">Plot</p>
+                            </div>
+                            <div class="live__chart__diagram"></div>
+                        </div>
+                        <div class="live__chart__bar">
+                            <div class="live__chart__params"></div>
+                            <div class="live__chart__params"></div>
+                            <div class="live__chart__params"></div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="spectra">
+                    <div class="spectra__header">Spectra</div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
